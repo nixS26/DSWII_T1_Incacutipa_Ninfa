@@ -122,12 +122,14 @@ public class CuentaService {
     private String construirContenidoArchivo(Cuenta cuenta) {
         if (cuenta.getSaldo() > 5000) {
             return "Banco de origen: " + cuenta.getBanco() + "\n"
-                    + "La cuenta con el nro de cuenta: " + cuenta.getNroCuenta() + "tiene un saldo de ." + cuenta.getSaldo() + "\n"
-                    + "Usted es apto a participar en el  concurso de la SBS por 10000.00 soles.Suerte!";
+                    + "La cuenta con el nro de cuenta: " + cuenta.getNroCuenta() + " tiene un saldo de ." + cuenta.getSaldo() + "\n"
+                    + "Usted es apto a participar en el  concurso de la SBS por 10000.00 soles." +"\n"+
+                    "Suerte!";
         } else {
             return "Banco de origen: " + cuenta.getBanco() + "\n"
                     + "La cuenta con el nro de cuenta: " + cuenta.getNroCuenta() + " no tiene un saldo superior a 5000.00.\n"
-                    + "Lamentablemente no podrá acceder al concurso de la SBS por 10000.00 soles. Gracias";
+                    + "Lamentablemente no podrá acceder al concurso de la SBS por 10000.00 soles." +"\n"+
+                    "Gracias";
         }
     }
 
